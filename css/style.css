@@ -70,14 +70,14 @@
 .footer {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: 200px;
+  margin-bottom: 20px;
 }
 
 .footer_text {
   display: flex;
   flex-direction: row;
   align-items: end;
+  margin-bottom: 40px;
 }
 
 .footer_text-content {
@@ -91,4 +91,14 @@
   font-weight: 700;
 
   margin-left: 0.5rem;
+}
+
+.footer_contact-links p:first-child {
+  margin-bottom: 1rem;
+}
+
+.footer_contact-links a {
+  text-decoration: none;
+  color: var(--clr-dark);
+  font-weight: 700;
 }
