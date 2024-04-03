@@ -12,83 +12,45 @@
   }
 }
 
-.container {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  background-color: var(--clr-light);
+main {
+  width: 80vw;
+  margin: 0 auto;
+  padding-top: 20%;
 }
 
-/* HEADER */
-
-.header {
-  height: calc(100vh - 128px);
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.text {
+  margin: 25px 0;
 }
 
-.title,
-.subtitle {
-  font-weight: 400;
-  line-height: 3rem;
+.line {
+  width: 20px;
+  background-color: var(--clr-primary);
+  border-radius: 12px;
 }
 
-.title {
-  width: 17rem;
-  margin-bottom: 20px;
-}
-
-.title-bold {
-  font-weight: 700;
-}
-
-/* MAIN */
-.main {
-}
-
-.section {
-  margin-bottom: 5rem;
-}
-
-.section_title {
-  background-color: var(--clr-light);
-  position: sticky;
-  top: 0;
-  padding: 1.75rem 0;
-}
-
-.about-content {
-  line-height: 1.5rem;
-}
-
-/* FOOTER */
-
-.footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 200px;
-}
-
-.footer_text {
+.art {
   display: flex;
   flex-direction: row;
-  align-items: end;
+  justify-content: space-between;
 }
 
-.footer_text-content {
-  width: 80px;
-  font-size: 1.5rem;
-  font-weight: 700;
+.line-1 {
+  height: 120px;
 }
 
-#question_mark {
-  font-size: 2.625rem;
-  font-weight: 700;
+.line-2 {
+  height: 90px;
+}
 
-  margin-left: 0.5rem;
+.line-3 {
+  height: 60px;
+}
+
+.line-4 {
+  height: 25px;
+}
+
+
+a {
+  
 }
