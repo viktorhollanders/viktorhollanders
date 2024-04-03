@@ -1,0 +1,94 @@
+:root {
+  --clr-dark: #0a0a0a;
+  --clr-light: #fafafa;
+  --clr-primary: #1e40af;
+  font-family: Inter, sans-serif;
+  font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
+}
+
+@supports (font-variation-settings: normal) {
+  :root {
+    font-family: InterVariable, sans-serif;
+  }
+}
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: var(--clr-light);
+}
+
+/* HEADER */
+
+.header {
+  height: calc(100vh - 128px);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title,
+.subtitle {
+  font-weight: 400;
+  line-height: 3rem;
+}
+
+.title {
+  width: 17rem;
+  margin-bottom: 20px;
+}
+
+.title-bold {
+  font-weight: 700;
+}
+
+/* MAIN */
+.main {
+}
+
+.section {
+  margin-bottom: 5rem;
+}
+
+.section_title {
+  background-color: var(--clr-light);
+  position: sticky;
+  top: 0;
+  padding: 1.75rem 0;
+}
+
+.about-content {
+  line-height: 1.5rem;
+}
+
+/* FOOTER */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 200px;
+}
+
+.footer_text {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+}
+
+.footer_text-content {
+  width: 80px;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+#question_mark {
+  font-size: 2.625rem;
+  font-weight: 700;
+
+  margin-left: 0.5rem;
+}
