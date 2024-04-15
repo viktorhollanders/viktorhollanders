@@ -13,7 +13,7 @@
 }
 
 main {
-  width: 320px;
+  width: 90vw;
   height: 90vh;
   padding: 1rem 0;
   margin: 0 auto;
@@ -39,10 +39,35 @@ main {
   font-weight: 700;
 }
 
-.line {
-  width: 20px;
-  background-color: var(--clr-primary);
-  border-radius: 12px;
-  height: 90px;
-  margin: 1rem 0;
+/* CIRCLES */
+
+.circles {
+  margin-top: 2rem;
+}
+
+.circle {
+  height: 42px;
+  width: 42px;
+  border-radius: 100%;
+}
+
+.c1 {
+  background-color: #ffb906;
+  position: relative;
+  top: 0px;
+  left: 35%;
+}
+
+.c2 {
+  background-color: #ff06bd;
+  position: relative;
+  top: 15%;
+  left: 15%;
+}
+
+.c3 {
+  background-color: #06fbff;
+  position: relative;
+  top: 25%;
+  left: 45%;
 }
