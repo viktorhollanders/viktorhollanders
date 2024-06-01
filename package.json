@@ -1,0 +1,16 @@
+{
+  "name": "viktorhollanders",
+  "version": "1.0.0",
+  "description": "This is a repository for my personal website. It's a bit of a portfolio and introduction about me. Maybe I will add some articles in the future with topics related to computer science, design, studying, and interesting reads.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
