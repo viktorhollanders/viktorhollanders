@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "name": "Söguhemar",
+    "color": "#FEC01F"
+  },
+  {
+    "id": 2,
+    "name": "Steini art",
+    "color": "#303030"
+  },
+  {
+    "id": 3,
+    "name": "Find",
+    "color": "#419F67"
+  },
+  {
+    "id": 4,
+    "name": "Mah-jong",
+    "color": "#41679F"
+  },
+  {
+    "id": 5,
+    "name": "Checked",
+    "color": "#F528F9"
+  }
+]

@@ -1,0 +1,99 @@
+:root {
+  font-family: Inter, sans-serif;
+  font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
+  --white: #fafafa;
+  --black: #060606;
+
+  --gray-50: #ececec;
+  --gray-100: #c9c9c9;
+  --gray-300: #808080;
+  --gray-500: #262626;
+}
+
+@supports (font-variation-settings: normal) {
+  :root {
+    font-family: InterVariable, sans-serif;
+  }
+}
+
+body {
+  background-color: var(--white);
+}
+
+/* HEADER */
+header {
+  padding: 22px;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+
+.title,
+.sub-title {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.title {
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+.sub-title {
+  font-weight: 400;
+  color: var(--gray-300);
+}
+
+/* MAIN */
+section {
+  padding: 0 22px;
+}
+
+.about,
+.projects {
+  padding-top: 42px;
+}
+
+.copy {
+  line-height: 1.6rem;
+}
+
+.project {
+  text-decoration: underline;
+  margin-bottom: 16px;
+}
+
+.project:hover {
+  cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+  padding: 42px 22px;
+}
+.footer-title {
+  margin-bottom: 16px;
+}
+.footer-title > h2 {
+  display: inline;
+}
+
+.footer-contact a,
+.footer-contact a:visited {
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--black);
+}
+
+.footer-contact a:hover {
+  cursor: pointer;
+}
+
+/* .vertical {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+} */
