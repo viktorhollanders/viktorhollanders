@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Vitkor Hollanders</title>
+    <title>Viktor Hollanders</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <link rel="preconnect" href="https://rsms.me/" />
@@ -48,7 +48,31 @@
       </section>
       <section class="section projects">
         <h2 class="title">PROJECTS</h2>
-        <div class="column" id="project_container"></div>
+        <div class="column" id="project_container">
+          <!-- Projects are loaded dynamic -->
+          <div class="modal" tabindex="-1">
+            <div class="modal-header">
+              <div class="shape-title">
+                <div class="project-shape"></div>
+                <h4 class="project-title">Soguheimar</h4>
+              </div>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                <p>X</p>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p class="project-role">Development and design</p>
+              <p class="project-copy">
+                Söguheimar is a summer camp founded in 2014. I took over the project 2016 and
+                redesigned the website but continued using Jekyll.
+              </p>
+              <div class="project-links">
+                <a class="link">Website</a>
+                <a class="link">Github</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
     <footer>

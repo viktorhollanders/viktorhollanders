@@ -14,7 +14,10 @@ const getAllProjects = async () => {
 };
 
 const projectsContainer = document.querySelector('#project_container');
-console.log(projectsContainer);
+
+const onClick = (e) => {
+  console.log(e.target.id);
+};
 
 getAllProjects().then(() => {
   projects.forEach((project) => {
@@ -22,7 +25,8 @@ getAllProjects().then(() => {
     newProject.textContent = project.name;
     newProject.style.color = project.color;
     newProject.classList.add('project');
+    newProject.id = `pro${project.id}`;
+    newProject.addEventListener('click', onClick);
     projectsContainer.appendChild(newProject);
-    console.log(project);
   });
 });
