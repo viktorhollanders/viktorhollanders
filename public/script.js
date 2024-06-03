@@ -1,5 +1,14 @@
 let projects = [];
 
+const checkColorThreshold = (color) => {
+  const [r, g, b] = color;
+  console.log(r);
+  const threshold = [48, 48, 48];
+  const [thresholdR, thresholdG, thresholdB] = threshold;
+
+  return r <= thresholdR && g <= thresholdG && b <= thresholdB;
+};
+
 const getAllProjects = async () => {
   const url = 'http://localhost:3000/projects.json';
   try {
@@ -14,8 +23,6 @@ const getAllProjects = async () => {
 };
 
 const projectsContainer = document.querySelector('#project-container');
-console.log(projectsContainer);
-
 const modal = document.querySelector('.modal');
 let modalTitle = modal.querySelector('.project-title');
 let modalShape = modal.querySelector('.project-shape');
@@ -29,13 +36,50 @@ const onClick = (e) => {
   const project = projects.find((project) => project.id === parseInt(projectId));
 
   if (project) {
-    console.log(project);
+    modal.style.display = 'block';
+    const projectBtn = projectsContainer.querySelectorAll('.project');
+
+    projectBtn.forEach((btn) => (btn.style.display = 'none'));
+
     modalTitle.textContent = project.name;
-    modalShape.style.backgroundColor = `rgb(${project.color})`;
+
+    // Update shape depending on if it is a square, triangle or circle.
+    if (project.shape.toLowerCase() === 'triangle') {
+      modalShape.style.clipPath = 'polygon(50% 0%, 0% 100%, 100% 100%)';
+    } else if (project.shape.toLowerCase() === 'square') {
+      modalShape.style.clipPath = 'circle(100%)';
+    } else {
+      modalShape.style.clipPath = 'circle(50%)';
+    }
+
+    // Make color lighter if a certain threshold is met
+    const toDark = checkColorThreshold(project.color);
+    let rgbColor; // the rgb color of the project
+    if (toDark) {
+      const opacity = 0.5;
+      rgbColor = `rgb(${project.color.join(',')}, ${opacity})`;
+    } else {
+      rgbColor = `rgb(${project.color})`;
+    }
+    modalShape.style.backgroundColor = rgbColor;
+
     modalRole.textContent = project.role;
     modalDescription.textContent = project.description;
-    modalWebsite.href = project.website;
-    modalGithub.href = project.github;
+
+    // Check if website exists
+    if (project.website === '#') {
+      modalWebsite.style.display = 'none';
+    } else {
+      modalWebsite.href = project.website;
+      modalWebsite.style.display = 'block';
+    }
+
+    if (project.github == '#') {
+      modalGithub.style.display = 'none';
+    } else {
+      modalGithub.href = project.github;
+      modalGithub.style.display = 'block';
+    }
   }
 };
 
@@ -50,3 +94,14 @@ getAllProjects().then(() => {
     projectsContainer.appendChild(newProject);
   });
 });
+
+const closeBtn = modal.querySelector('.btn-close');
+
+const closeModal = () => {
+  modal.style.display = 'none';
+  const projectBtn = projectsContainer.querySelectorAll('.project');
+
+  projectBtn.forEach((btn) => (btn.style.display = 'block'));
+};
+
+closeBtn.addEventListener('click', closeModal);

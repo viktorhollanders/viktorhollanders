@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "color": "255,185,6",
+    "color": [255, 185, 6],
     "shape": "circle",
     "name": "Söguhemar",
     "role": "Development",
@@ -11,7 +11,7 @@
   },
   {
     "id": 2,
-    "color": "48,48,48",
+    "color": [48, 48, 48],
     "shape": "square",
     "name": "Steini art",
     "role": "Development and design",
@@ -21,11 +21,31 @@
   },
   {
     "id": 3,
-    "color": "245,40,249",
+    "color": [245, 40, 249],
     "shape": "triangle",
     "name": "Checked",
     "role": "Design",
     "description": "todo app",
+    "website": "#",
+    "github": "#"
+  },
+  {
+    "id": 4,
+    "color": [65, 159, 103],
+    "shape": "triangle",
+    "name": "Find",
+    "role": "Design",
+    "description": "A mobile game that is about finding a ciclist in the forest. Built using treee.js.",
+    "website": "#",
+    "github": "#"
+  },
+  {
+    "id": 5,
+    "color": [65, 103, 159],
+    "shape": "triangle",
+    "name": "Mah-jong",
+    "role": "Design and develop",
+    "description": "A Mah-jong web game. play with your friends in the gambling game ma-jong.",
     "website": "#",
     "github": "#"
   }
