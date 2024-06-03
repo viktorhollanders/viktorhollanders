@@ -107,7 +107,7 @@ section {
 .project-shape {
   height: 110px;
   width: 110px;
-  background-color: #ffb906;
+  background-color: rgb(255, 185, 6, 1);
   clip-path: circle(50%);
 }
 
@@ -116,6 +116,7 @@ section {
   top: 40%;
   left: 60%;
   text-align: center;
+  text-wrap: nowrap;
 }
 
 .btn-close {

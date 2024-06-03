@@ -1,17 +1,17 @@
 [
   {
     "id": 1,
-    "color": "#FEC01F",
+    "color": "255,185,6",
     "shape": "circle",
     "name": "Söguhemar",
-    "role": "Development and design",
+    "role": "Development",
     "description": "Söguheimar is a summer camp founded in 2014. I took over the project 2016 and redesigned the website but continued using Jekyll.",
     "website": "https://soguheimar.is/",
     "github": "https://github.com/viktorhollanders/soguheimar"
   },
   {
     "id": 2,
-    "color": "#303030",
+    "color": "48,48,48",
     "shape": "square",
     "name": "Steini art",
     "role": "Development and design",
@@ -21,11 +21,12 @@
   },
   {
     "id": 3,
-    "color": "#F528F9",
+    "color": "245,40,249",
     "shape": "triangle",
     "name": "Checked",
+    "role": "Design",
     "description": "todo app",
-    "website": "",
-    "github": ""
+    "website": "#",
+    "github": "#"
   }
 ]
