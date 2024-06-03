@@ -1,27 +1,31 @@
 [
   {
     "id": 1,
+    "color": "#FEC01F",
+    "shape": "circle",
     "name": "Söguhemar",
-    "color": "#FEC01F"
+    "role": "Development and design",
+    "description": "Söguheimar is a summer camp founded in 2014. I took over the project 2016 and redesigned the website but continued using Jekyll.",
+    "website": "https://soguheimar.is/",
+    "github": "https://github.com/viktorhollanders/soguheimar"
   },
   {
     "id": 2,
+    "color": "#303030",
+    "shape": "square",
     "name": "Steini art",
-    "color": "#303030"
+    "role": "Development and design",
+    "description": "Steini art is a blog and art showcase for Aðalstein Þórsson and his project Einkasafnið. It´s built-in Craft CMS, which is a fantastic CMS.",
+    "website": "https://steini.art/",
+    "github": "https://github.com/viktorhollanders/steiniart-craft-CMS-source"
   },
   {
     "id": 3,
-    "name": "Find",
-    "color": "#419F67"
-  },
-  {
-    "id": 4,
-    "name": "Mah-jong",
-    "color": "#41679F"
-  },
-  {
-    "id": 5,
+    "color": "#F528F9",
+    "shape": "triangle",
     "name": "Checked",
-    "color": "#F528F9"
+    "description": "todo app",
+    "website": "",
+    "github": ""
   }
 ]

@@ -13,9 +13,10 @@ const getAllProjects = async () => {
   }
 };
 
-const projectsContainer = document.querySelector('#project_container');
+const projectsContainer = document.querySelector('#project-container');
+console.log(projectsContainer);
 
-const onClick = (e) => {
+const projectModal = (e) => {
   console.log(e.target.id);
 };
 
@@ -26,7 +27,7 @@ getAllProjects().then(() => {
     newProject.style.color = project.color;
     newProject.classList.add('project');
     newProject.id = `pro${project.id}`;
-    newProject.addEventListener('click', onClick);
+    newProject.addEventListener('click', projectModal);
     projectsContainer.appendChild(newProject);
   });
 });
