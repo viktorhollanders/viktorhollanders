@@ -2,7 +2,6 @@ let projects = [];
 
 const checkColorThreshold = (color) => {
   const [r, g, b] = color;
-  console.log(r);
   const threshold = [48, 48, 48];
   const [thresholdR, thresholdG, thresholdB] = threshold;
 
@@ -10,7 +9,8 @@ const checkColorThreshold = (color) => {
 };
 
 const getAllProjects = async () => {
-  const url = 'http://localhost:3000/projects.json';
+  const baseURL = 'http://localhost:3000';
+  const url = `${baseURL}/projects.json`;
   try {
     const response = await fetch(url);
     const projectData = await response.json();
@@ -36,7 +36,7 @@ const onClick = (e) => {
   const project = projects.find((project) => project.id === parseInt(projectId));
 
   if (project) {
-    modal.style.display = 'block';
+    modal.style.display = 'flex';
     const projectBtn = projectsContainer.querySelectorAll('.project');
 
     projectBtn.forEach((btn) => (btn.style.display = 'none'));

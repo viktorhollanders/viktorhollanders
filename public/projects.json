@@ -18,35 +18,5 @@
     "description": "Steini art is a blog and art showcase for Aðalstein Þórsson and his project Einkasafnið. It´s built-in Craft CMS, which is a fantastic CMS.",
     "website": "https://steini.art/",
     "github": "https://github.com/viktorhollanders/steiniart-craft-CMS-source"
-  },
-  {
-    "id": 3,
-    "color": [245, 40, 249],
-    "shape": "triangle",
-    "name": "Checked",
-    "role": "Design",
-    "description": "todo app",
-    "website": "#",
-    "github": "#"
-  },
-  {
-    "id": 4,
-    "color": [65, 159, 103],
-    "shape": "triangle",
-    "name": "Find",
-    "role": "Design",
-    "description": "A mobile game that is about finding a ciclist in the forest. Built using treee.js.",
-    "website": "#",
-    "github": "#"
-  },
-  {
-    "id": 5,
-    "color": [65, 103, 159],
-    "shape": "triangle",
-    "name": "Mah-jong",
-    "role": "Design and develop",
-    "description": "A Mah-jong web game. play with your friends in the gambling game ma-jong.",
-    "website": "#",
-    "github": "#"
   }
 ]
