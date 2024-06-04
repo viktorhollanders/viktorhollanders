@@ -138,6 +138,7 @@ section {
 }
 
 .btn-close p {
+  color: var(--black);
   font-size: 2rem;
   font-weight: 600;
 }
