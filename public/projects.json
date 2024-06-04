@@ -3,7 +3,7 @@
     "id": 1,
     "color": [255, 185, 6],
     "shape": "circle",
-    "name": "Söguhemar",
+    "name": "Söguheimar",
     "role": "Development",
     "description": "Söguheimar is a summer camp founded in 2014. I took over the project 2016 and redesigned the website but continued using Jekyll.",
     "website": "https://soguheimar.is/",
