@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "color": [255, 185, 6],
+    "shape": "circle",
+    "name": "Söguhemar",
+    "role": "Development",
+    "description": "Söguheimar is a summer camp founded in 2014. I took over the project 2016 and redesigned the website but continued using Jekyll.",
+    "website": "https://soguheimar.is/",
+    "github": "https://github.com/viktorhollanders/soguheimar"
+  },
+  {
+    "id": 2,
+    "color": [48, 48, 48],
+    "shape": "square",
+    "name": "Steini art",
+    "role": "Development and design",
+    "description": "Steini art is a blog and art showcase for Aðalstein Þórsson and his project Einkasafnið. It´s built-in Craft CMS, which is a fantastic CMS.",
+    "website": "https://steini.art/",
+    "github": "https://github.com/viktorhollanders/steiniart-craft-CMS-source"
+  }
+]

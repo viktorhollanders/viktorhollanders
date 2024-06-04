@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Viktor Hollanders</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <link rel="preconnect" href="https://rsms.me/" />
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+    <link href="assets/css/reset.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <script type="module" src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="title-container">
+        <h2 class="sub-title">My name is</h2>
+        <h1 class="title">Viktor Hollanders</h1>
+      </div>
+      <div class="title-container">
+        <h2 class="sub-title">I am a</h2>
+        <h1 class="title">software engineer</h1>
+      </div>
+    </header>
+    <main>
+      <picture class="cover header-cover">
+        <source srcset="assets/images/header-image-cropped.jpeg" media="(max-width: 425px)" />
+        <img src="assets/images/header-image.jpeg" alt="Viktor Hollanders" />
+      </picture>
+      <section class="section about">
+        <h2 class="title vertical">ABOUT</h2>
+        <div class="column">
+          <p class="about-copy copy">
+            There are two things that have always inspired me: being able to build something from
+            scratch and the freedom to work from anywhere. When I discovered programming eight years
+            ago, I found that it was the perfect fit for both. I pursued it on and off until three
+            years ago when I got more into web development, and then a year ago, I decided to go all
+            in and started studying computer science at Reykjavik University.
+          </p>
+          <p class="about-copy copy">
+            I have a keen interest in well-designed products that have good user experience and
+            aesthetic appeal. As a developer, I am interested in cloud computing and the development
+            of mobile and web applications. Besides that, I have a passion for being outside and
+            taking photos, as well as making good coffee.
+          </p>
+        </div>
+      </section>
+      <section class="section projects">
+        <h2 class="title vertical">PROJECTS</h2>
+        <div class="column" id="project-container">
+          <!-- Projects are loaded dynamic -->
+          <div class="modal">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+              <p>X</p>
+            </button>
+            <div class="modal-header">
+              <div class="shape-title">
+                <div class="project-shape"></div>
+                <h4 class="project-title">Söguheimar</h4>
+              </div>
+            </div>
+            <div class="modal-body">
+              <p class="project-role">Development</p>
+              <p class="project-description copy">
+                Söguheimar is a summer camp founded in 2014. I took over the project 2016 and
+                redesigned the website but continued using Jekyll.
+              </p>
+              <div class="project-links">
+                <a class="link project-website" href="#" target="_blank" rel="noreferrer"
+                  >Website</a
+                >
+                <a class="link project-github" href="#" target="_blank" rel="noreferrer">Github</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-title column">
+        <h2>GOT AN EXITING PROJECT</h2>
+        <h2 id="larg">?</h2>
+      </div>
+
+      <div class="footer-contact">
+        <p>
+          Contact me at
+          <a
+            href="https://is.linkedin.com/in/viktor-hollanders-1148532b1"
+            target="_blank"
+            rel="noreferrer"
+            >linkedin</a
+          >
+        </p>
+        <p>or <a href="mailto:iktorhollanders@hey.com">viktorhollanders@hey.com</a></p>
+      </div>
+    </footer>
+  </body>
+</html>
