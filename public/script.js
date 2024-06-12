@@ -9,7 +9,7 @@ const checkColorThreshold = (color) => {
 };
 
 const getAllProjects = async () => {
-  const baseURL = 'https://viktorhollanders.com';
+  const baseURL = 'http://localhost:3000';
   const url = `${baseURL}/projects.json`;
   try {
     const response = await fetch(url);
