@@ -26,7 +26,7 @@
     "name": "Parser",
     "role": "Development",
     "description": "Parser is a command-line tool I developed to convert CSV rows into individual PDFs. These PDFs are then merged into a single document, simplifying printing.",
-    "website": "",
+    "website": "#",
     "github": "https://github.com/viktorhollanders/parser"
   }
 ]
