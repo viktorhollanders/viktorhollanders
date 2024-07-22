@@ -64,6 +64,8 @@ header {
 /* MAIN */
 section {
   padding: 0 22px;
+  max-width: 1024px;
+  margin: 0 auto;
 }
 
 .about,
