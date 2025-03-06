@@ -1,3 +1,11 @@
+# Personal website
+
+### Author
+
+Viktor Hollanders <viktorhollanders@hey.com>
+
+Website: [viktorhollanders.com](https://viktorhollanders.com)
+
 ### Hey there 👋
 
 This is a repository for my personal website. It's a bit of a portfolio and introduction about me. Maybe I will add some articles in the future with topics related to computer science, design, studying, and interesting reads.
