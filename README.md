@@ -6,7 +6,7 @@ Viktor Hollanders <viktorhollanders@hey.com>
 
 Website: [viktorhollanders.com](https://viktorhollanders.com)
 
-### Hey there 👋
+### About
 
 This is a repository for my personal website. It's a portfolio of things I haeve made. Maybe I will add some articles in the future with topics related to computer science and design and a UI ideas section.
 
