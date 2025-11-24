@@ -1,6 +1,6 @@
 const projectsContainer = document.getElementById('project-container');
 
-const baseURL = 'http://localhost:3000/';
+const baseURL = '/';
 
 const fetchData = async (filename) => {
   try {
@@ -12,6 +12,7 @@ const fetchData = async (filename) => {
     return data;
   } catch (error) {
     console.error('There was an error:', error);
+    return [];
   }
 };
 
