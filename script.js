@@ -1,10 +1,6 @@
-const projectsContainer = document.getElementById('project-container');
-
-const baseURL = '/';
-
 const fetchData = async (filename) => {
   try {
-    const response = await fetch(`${baseURL}${filename}.json`);
+    const response = await fetch(`${filename}.json`);
     if (!response) {
       throw new Error(`${filename} not available`);
     }
@@ -15,8 +11,6 @@ const fetchData = async (filename) => {
     return [];
   }
 };
-
-let projects = await fetchData('projects');
 
 const generateShape = (projectShape) => {
   const shape = projectShape.toLowerCase();
@@ -29,12 +23,7 @@ const generateShape = (projectShape) => {
   }
 };
 
-const formatShapeColor = (color) => {
-  const [r, g, b] = color;
-  const isDark = r <= 48 && g <= 48 && b <= 48;
-
-  return isDark ? `rgba(${color.join(',')}, 0.5)` : `rgb(${color.join(',')})`;
-};
+let projects = await fetchData('projects');
 
 const generateModalHtml = (project) => {
   let clipPathValue = generateShape(project.shape);
@@ -65,10 +54,18 @@ const generateModalHtml = (project) => {
   `;
 };
 
+const formatShapeColor = (color) => {
+  const [r, g, b] = color;
+  const isDark = r <= 48 && g <= 48 && b <= 48;
+
+  return isDark ? `rgba(${color.join(',')}, 0.5)` : `rgb(${color.join(',')})`;
+};
+
 const onClick = (e) => {
   const projectId = e.target.id;
   const project = projects.find((p) => p.id === parseInt(projectId));
 
+  const projectsContainer = document.getElementById('project-container');
   projectsContainer.insertAdjacentHTML('beforeend', generateModalHtml(project));
 
   const modal = document.querySelector('.modal');
