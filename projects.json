@@ -18,15 +18,5 @@
     "description": "Steini art is a blog and art showcase for Aðalstein Þórsson and his project Einkasafnið. It´s built-in Craft CMS, which is a fantastic CMS.",
     "website": "https://steini.art/",
     "github": "https://github.com/viktorhollanders/steiniart-craft-CMS-source"
-  },
-  {
-    "id": 3,
-    "color": [24, 180, 124],
-    "shape": "square",
-    "name": "Parser",
-    "role": "Development",
-    "description": "Parser is a command-line tool I developed to convert CSV rows into individual PDFs. These PDFs are then merged into a single document, simplifying printing.",
-    "website": "#",
-    "github": "https://github.com/viktorhollanders/parser"
   }
 ]
