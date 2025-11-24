@@ -61,11 +61,12 @@ const formatShapeColor = (color) => {
   return isDark ? `rgba(${color.join(',')}, 0.5)` : `rgb(${color.join(',')})`;
 };
 
+const projectsContainer = document.getElementById('project-container');
+
 const onClick = (e) => {
   const projectId = e.target.id;
   const project = projects.find((p) => p.id === parseInt(projectId));
 
-  const projectsContainer = document.getElementById('project-container');
   projectsContainer.insertAdjacentHTML('beforeend', generateModalHtml(project));
 
   const modal = document.querySelector('.modal');
