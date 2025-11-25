@@ -35,7 +35,9 @@ a:visited {
 
 /* HEADER */
 header {
-  padding: 22px;
+  padding: 144px 22px 0 22px;
+  max-width: 1024px;
+  margin: 0 auto;
 }
 
 .title-container {
@@ -172,7 +174,9 @@ section {
 
 /* FOOTER */
 footer {
-  padding: 42px 22px;
+  padding: 0 22px;
+  max-width: 1024px;
+  margin: 0 auto;
 }
 
 .footer-title {
@@ -210,6 +214,10 @@ footer {
 }
 
 @media (min-width: 768px) {
+  header {
+    padding: 144px 22px 22px 72px;
+  }
+
   section {
     padding: 0 42px;
   }
@@ -288,7 +296,7 @@ footer {
 @media (min-width: 1024px) {
   /* MAIN AT 1024px */
   header {
-    padding: 52px;
+    padding: 300px 52px 52px 148px;
   }
 
   .title,

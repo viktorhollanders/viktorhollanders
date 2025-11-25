@@ -87,7 +87,7 @@ const onClick = (e) => {
 
 const closeModal = () => {
   const modal = document.querySelector('.modal');
-  modal.style.display = 'none';
+  modal.remove();
   const projectBtn = projectsContainer.querySelectorAll('.project');
   projectBtn.forEach((btn) => (btn.style.display = 'block'));
 };
