@@ -35,7 +35,7 @@ a:visited {
 
 /* HEADER */
 header {
-  padding: 144px 22px 0 22px;
+  padding: 147px 22px 0 22px;
   max-width: 1024px;
   margin: 0 auto;
 }
@@ -174,7 +174,7 @@ section {
 
 /* FOOTER */
 footer {
-  padding: 0 22px;
+  padding: 44px 22px 0 22px;
   max-width: 1024px;
   margin: 0 auto;
 }
@@ -182,8 +182,9 @@ footer {
 .footer-title {
   margin-bottom: var(--spacing-16px);
 }
-.footer-title > h2 {
+.footer-title > h3 {
   display: inline;
+  font-weight: 600;
 }
 
 .footer-contact a,
@@ -315,5 +316,9 @@ footer {
   /* FOOTER AT 1024px */
   footer {
     padding: 100px 148px;
+  }
+
+  .footer-title > h2 {
+    font-weight: 700;
   }
 }
