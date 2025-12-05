@@ -66,6 +66,10 @@ header {
   color: var(--gray-300);
 }
 
+.header-cover-image {
+  aspect-ratio: 3024 / 887;
+}
+
 /* MAIN */
 section {
   padding: 0 22px;
@@ -190,6 +194,12 @@ footer {
   height: 16px;
   vertical-align: middle;
   margin-left: 3px;
+}
+
+@media (min-width: 447px) {
+  .header-cover-image {
+    aspect-ratio: 909 / 961;
+  }
 }
 
 @media (min-width: 470px) {

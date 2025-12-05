@@ -6,11 +6,23 @@
     <title>Viktor Hollanders</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-    <link rel="preconnect" href="https://rsms.me/" />
-    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+    <link rel="preconnect" href="https://rsms.me/" crossorigin />
+    <link
+      rel="preload"
+      href="https://rsms.me/inter/inter.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="stylesheet"
+      href="https://rsms.me/inter/inter.css"
+      media="print"
+      onload="this.media='all'"
+    />
     <link href="css/reset.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
-    <script type="module" src="script.js"></script>
+    <script type="module" src="script.js" defer></script>
   </head>
   <body>
     <header>
@@ -25,10 +37,13 @@
     </header>
     <main>
       <picture class="cover header-cover">
-        <source srcset="assets/images/header-image-cropped.jpg" media="(max-width: 425px)" />
+        <source media="(width < 447px)" srcset="assets/images/header-image-cropped.jpg" />
+        <source media="(width >= 447px)" srcset="assets/images/header-image.jpg" />
+
         <img
           src="assets/images/header-image.jpg"
           alt="Picture of Viktor Hollanders standing on mountain"
+          fetchpriority="high"
         />
       </picture>
       <section class="section about">
