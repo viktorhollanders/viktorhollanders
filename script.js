@@ -30,7 +30,7 @@ const generateModalHtml = (project) => {
   return `
    <div class="modal">
       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-        <p>X</p>
+        X
       </button>
       <div class="modal-header">
         <div class="shape-title">
@@ -44,10 +44,14 @@ const generateModalHtml = (project) => {
           ${project.description}
         </p>
         <div class="project-links">
-          <a class="link project-website" href="${project.website}" target="_blank" rel="noreferrer"
-            >Website</a
-          >
-          <a class="link project-github" href="${project.github}" target="_blank" rel="noreferrer">Github</a>
+          <a href="${project.website}"
+             target="_blank"
+             rel="noreferrer
+             aria-label="View ${project.name} website">Website</a>
+          <a href="${project.github}"
+             target="_blank"
+             rel="noreferrer"
+             aria-label="View ${project.name} on Github">Github</a>
         </div>
       </div>
     </div>
