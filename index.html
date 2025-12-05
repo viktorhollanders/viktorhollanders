@@ -18,26 +18,29 @@
   </head>
   <body>
     <header>
-      <div class="title-container">
-        <h2 class="sub-title">My name is</h2>
-        <h1 class="title">Viktor Hollanders</h1>
-      </div>
-      <div class="title-container">
-        <h2 class="sub-title">I create</h2>
-        <h1 class="title">digital products</h1>
-      </div>
-    </header>
-    <main>
-      <picture class="cover header-cover">
-        <source media="(width < 447px)" srcset="assets/images/header-image-cropped.jpg" />
+      <section class="title-section">
+        <div class="title-container">
+          <h2 class="sub-title">My name is</h2>
+          <h1 class="title">Viktor Hollanders</h1>
+        </div>
+        <div class="title-container">
+          <h2 class="sub-title">I create</h2>
+          <h1 class="title">digital products</h1>
+        </div>
+      </section>
+      <picture>
+        <source media="(width <= 447px)" srcset="assets/images/header-image-cropped.jpg" />
         <source media="(width >= 447px)" srcset="assets/images/header-image.jpg" />
 
         <img
+          class="header-cover-image"
           src="assets/images/header-image.jpg"
           alt="Picture of Viktor Hollanders standing on mountain"
           fetchpriority="high"
         />
       </picture>
+    </header>
+    <main>
       <section class="section about">
         <h2 class="title vertical">ABOUT</h2>
         <div class="column">

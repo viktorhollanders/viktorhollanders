@@ -52,7 +52,7 @@ a:hover {
 }
 
 /* HEADER */
-header {
+.title-section {
   padding: 147px 22px 0 22px;
   max-width: 1024px;
   margin: 0 auto;
@@ -82,7 +82,9 @@ header {
 }
 
 .header-cover-image {
-  aspect-ratio: 3024 / 887;
+  aspect-ratio: 909 / 961;
+  width: 100%;
+  height: auto;
 }
 
 /* MAIN */
@@ -213,7 +215,7 @@ footer {
 
 @media (min-width: 447px) {
   .header-cover-image {
-    aspect-ratio: 909 / 961;
+    aspect-ratio: 1335 / 392;
   }
 }
 
@@ -240,7 +242,7 @@ footer {
 }
 
 @media (min-width: 768px) {
-  header {
+  .title-section {
     padding: 144px 22px 22px 72px;
   }
 
@@ -323,7 +325,7 @@ footer {
 
 @media (min-width: 1024px) {
   /* MAIN AT 1024px */
-  header {
+  .title-section {
     padding: 300px 52px 52px 148px;
   }
 
