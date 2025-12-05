@@ -140,6 +140,7 @@ section {
   height: 42px;
   width: 42px;
   background-color: transparent;
+  -webkit-tap-highlight-color: transparent;
   border: none;
   margin-left: auto;
 
@@ -175,7 +176,7 @@ section {
 
 /* FOOTER */
 footer {
-  padding: 44px 22px 0 22px;
+  padding: 44px 22px;
   max-width: 1024px;
   margin: 0 auto;
   display: flex;
