@@ -17,6 +17,21 @@
   }
 }
 
+/* Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
 body {
   background-color: var(--white);
 }
