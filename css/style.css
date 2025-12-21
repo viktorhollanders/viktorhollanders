@@ -26,6 +26,10 @@
   padding: 0;
 }
 
+html {
+  font-size: clamp(1rem, 0.875rem + 0.25vw, 1.25rem);
+}
+
 img,
 picture {
   max-width: 100%;
@@ -108,7 +112,8 @@ section {
 }
 
 .project {
-  text-decoration: underline;
+  font-size: 1.5rem;
+  text-decoration: none;
   margin-bottom: var(--spacing-16px);
 }
 
